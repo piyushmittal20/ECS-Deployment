@@ -1,0 +1,24 @@
+{
+    "family": "first_ecr_repo",
+    "executionRoleArn": "arn:aws:iam::394543194721:role/ecsInstanceRole",
+    "networkMode": "awsvpc",
+    "containerDefinitions": [
+        {
+            "name": "first_ecr_container",
+            "image": "394543194721.dkr.ecr.ap-south-1.amazonaws.com/first_ecr_repo:latest",
+            "portMappings": [
+                {
+                    "containerPort": 8080,
+                    "hostPort": 8080,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true
+        }
+    ],
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "cpu": "512",
+    "memory": "1024"
+}
