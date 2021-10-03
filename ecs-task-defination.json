@@ -1,6 +1,6 @@
 {
-    "family": "first_ecr_repo",
-    "executionRoleArn": "arn:aws:iam::394543194721:role/ecsInstanceRole",
+    "family": "first_ecs_defination",
+    "executionRoleArn": "arn:aws:iam::394543194721:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "containerDefinitions": [
         {
@@ -20,5 +20,5 @@
         "EC2"
     ],
     "cpu": "512",
-    "memory": "1024"
+    "memory": "512"
 }
